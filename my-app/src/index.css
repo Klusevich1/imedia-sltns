@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1330px;
+  margin: 0 auto;
+  gap: 150px;
+}
+
+.heading {
+  margin: 0;
+  width: 70%;
+  font-size: 100px;
+  font-weight: 400;
+}
+
+.description {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  width: 90%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 150px;
+  margin: 0 auto;
+}
+
+.parText {
+  width: 85%;
+  font-size: 14px;
+  color: #898892;
+}

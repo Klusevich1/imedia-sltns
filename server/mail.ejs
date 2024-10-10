@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            .welcome-message {
+                color: #2c3e50;
+                font-size: 22px;
+            }
+            .user-data {
+                background-color: #ecf0f1;
+                padding: 20px;
+                margin-top: 20px;
+            }
+            .order {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .textVar {
+                margin: 0;
+                font-size: 13px;
+                font-weight: 500;
+            }
+            .varPrice {
+                margin: 0;
+                width: 22%;
+                font-size: 22px;
+                font-weight: 500;
+            }
+        </style>
+    </head>
+    <body>
+    <h1 class="welcome-message">Уважаемый клиент!</h1>
+    <div class="user-data">
+        <h2>Ваши данные:</h2>
+        <p>Имя и Фамилия: <%= name %></p>
+        <p>Email: <%= email %></p>
+        <p>Расчитанная стоимость: <%= price %></p>
+        <% selectedVariants.forEach((item) => { %>
+            <div class='order'>
+                <p class='textVar'><%= item.text %></p>
+                <p class='varPrice'>
+                    <%= item.price.toLocaleString("ru-RU") %> руб.
+                </p>
+            </div>
+        <% }); %>
+      </div>
+        <div>
+            <p>Cпасибо за то, что выбрали нашу компанию для разработки вашего проекта. Мы ценим ваше доверие и возможность сотрудничества с нами.</p>
+            <p>Мы стремимся предоставить вам наилучший сервис и результат, поэтому высылаем вам нашу бриф-анкету. Это поможет нам создать индивидуальное и точное предложение, отвечающее требованиям вашего проекта.</p>
+            <p>Заполните бриф-анкету и отправьте нам обратно. Будьте уверены, что все предоставленные вами данные будут обрабатываться конфиденциально и использоваться исключительно для целей проекта.</p>
+            <p>Если у вас возникнут вопросы или вам потребуется дополнительная информация, пожалуйста, не стесняйтесь обращаться к нам. Мы всегда готовы помочь и ответить на все ваши вопросы.</p>
+            <p>
+              С наилучшими пожеланиями, <br>Команда iMedia Solutions
+            </p>
+        </div>
+    </body>
+    </html>

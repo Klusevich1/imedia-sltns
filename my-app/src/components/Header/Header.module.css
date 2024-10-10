@@ -1,0 +1,45 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lines {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.lines div {
+    height: 2px;
+    width: 40px;
+    background-color: #000;
+}
+
+.navLinks {
+    display: flex; 
+    gap: 30px;
+}
+
+.navLinks a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+
+.phoneAndOrder {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.phoneAndOrder button {
+    height: fit-content;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 6px 8px;
+}

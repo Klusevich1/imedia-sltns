@@ -1,0 +1,41 @@
+.footBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.line {
+    height: 1px;
+    background-color: #000;
+}
+
+.footLine {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footLine p {
+    margin: 0;
+    color: #161616;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.phones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footTitle {
+    margin: 0;
+    width: 70%;
+    font-size: 100px;
+    font-weight: 400;
+}
